@@ -1,4 +1,4 @@
-# interpretable-churn-prediction-ml
+# Interpretable-churn-prediction-ml
 Interpretable Machine Learning project on Customer Churn Prediction using SHAP analysis for global and local interpretability.  
 #  Customer Churn Prediction with SHAP Interpretability
 
@@ -27,7 +27,7 @@ interpretable-churn-prediction-project/
 |__ summary.md
 -
 └── plots/
-    |--shap summary plot.png
+    |__shap summary plot.png
     ├── customer1.png
     ├── customer2.png
     ├── customer3.png
@@ -43,15 +43,31 @@ interpretable-churn-prediction-project/
 - **Importance:** Helps design targeted retention strategies and improve customer satisfaction.
 
 ---
+#  Dataset Overview: Customer Churn Prediction
 
-##  Dataset
-- **Source:** [Insert dataset source here]  
-- **Size:** [Number of records, features]  
-- **Key Features:** Demographics, usage patterns, contract type, etc.  
-- **Preprocessing:**
-  - Missing value handling
-  - Encoding categorical variables
-  - Scaling/normalization
+This project uses a structured customer dataset from a telecom provider to predict churn behavior using machine learning and SHAP interpretability.
+
+---
+
+## Source
+- **Dataset Name**: Telco Customer Churn
+- **Format**: CSV
+- **Rows**: ~7,000 customers
+- **Columns**: 21 features + 1 target (`Churn`)
+
+---
+
+This dataset enables:
+- Binary classification (Churn vs. No Churn)
+- Feature importance analysis via SHAP
+- Local and global interpretability
+---
+
+##  Preprocessing Notes
+- `TotalCharges` is converted to numeric and cleaned for missing values.
+- Categorical features are encoded using one-hot encoding.
+- Binary features are mapped to `0/1`.
+- `customerID` is dropped as it is non-predictive.
 
 ---
 
