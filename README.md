@@ -33,6 +33,7 @@ interpretable-churn-prediction-project/
     ├── customer3.png
     ├── customer4.png
     └── customer5.png
+    |__ dependence.png
 ```
 ---
 
@@ -125,3 +126,4 @@ jupyter notebook project.ipynb
 ### Visualizations
 - SHAP Summary Plot
 - SHAP Force Plot
+- Dependence Plot
